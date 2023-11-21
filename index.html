@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
-
+    <script src="https://kit.fontawesome.com/1e696e298b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -49,42 +49,101 @@
                     </p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links active-links">Skills</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents active-tab">
                         <ul>
                             <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
                             <li><span>Web Development</span><br>Web app Development</li>
                             <li><span>App Development</span><br>Building Android apps</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2023 - Current</span><br>Front-end Designing Training at DX-P Institue</li>
-                            <li><span>2023 - Current</span><br>WordPress Training at DX-P Institue</li>
-                            <li><span>2023 - Current</span><br>UI/UX Design Training</li>
-                        </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------Services------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Alias, pariatur dolores veritatis aliquam dolorem beatae 
+                        exercitationem porro eius nesciunt voluptatum, ipsa doloremque 
+                        corrupti distinctio molestias obcaecati autem fuga magnam 
+                        recusandae!</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Alias, pariatur dolores veritatis aliquam dolorem beatae 
+                        exercitationem porro eius nesciunt voluptatum, ipsa doloremque 
+                        corrupti distinctio molestias obcaecati autem fuga magnam 
+                        recusandae!</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Alias, pariatur dolores veritatis aliquam dolorem beatae 
+                        exercitationem porro eius nesciunt voluptatum, ipsa doloremque 
+                        corrupti distinctio molestias obcaecati autem fuga magnam 
+                        recusandae!</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------Portfolio----------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/../assets/work-1.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/../assets/work-2.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/../assets/work-3.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
+            <a href="#" class="btn">See more</a>
         </div>
     </div>
 
     <script>
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablinks.classList.remove("active-links");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-        }
-
+       
     </script>
 </body>
 </html>
